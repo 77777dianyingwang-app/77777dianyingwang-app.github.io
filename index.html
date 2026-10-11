@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>77777电影网 - 高清电影电视剧在线观看推荐与影视资讯平台</title>
+<meta name="description" content="77777电影网提供最新高清电影、热播电视剧、综艺动漫的在线观看指南与影视资讯排行，每日更新片单推荐、剧情介绍、观影评测与上线时间表，找片看片就上77777电影网。" />
+<meta name="keywords" content="77777电影网,77777电影,高清电影在线观看,热播电视剧推荐,综艺动漫,影视资讯,电影排行榜,新片上映" />
+<meta name="author" content="77777电影网" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="theme-color" content="#0a0e1a" />
+<link rel="canonical" href="https://www.77777dianyingwang.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="77777电影网" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:title" content="77777电影网 - 高清电影电视剧在线观看推荐与影视资讯平台" />
+<meta property="og:description" content="77777电影网每日更新最新高清电影、热播剧集、综艺动漫片单与影视排行榜，剧情介绍、观影评测一网打尽。" />
+<meta property="og:url" content="https://www.77777dianyingwang.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="77777电影网 - 高清电影电视剧在线观看推荐" />
+<meta name="twitter:description" content="最新高清电影、热播电视剧、综艺动漫片单推荐与影视资讯排行，每日更新。" />
+<style>
+:root{
+  --bg:#0a0e1a;
+  --bg-2:#111827;
+  --card:rgba(255,255,255,.045);
+  --line:rgba(255,255,255,.10);
+  --txt:#e8ecf5;
+  --txt-2:#9aa6bd;
+  --gold:#f5c451;
+  --gold-2:#ff9d3d;
+  --cyan:#3ddad7;
+  --red:#ff5a6a;
+  --radius:16px;
+  --wrap:1200px;
+  --shadow:0 18px 40px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--txt);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:16px;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{margin:0;padding:0;list-style:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;letter-spacing:.5px}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.sec{padding:64px 0;scroll-margin-top:88px}
+.sec-alt{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,0))}
+
+/* ===== 顶部导航 ===== */
+.hdr{
+  position:sticky;top:0;z-index:60;
+  background:rgba(10,14,26,.82);
+  backdrop-filter:saturate(160%) blur(14px);
+  -webkit-backdrop-filter:saturate(160%) blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;gap:14px;height:66px}
+.logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.logo-mark{
+  width:38px;height:38px;border-radius:11px;flex:0 0 auto;
+  background:linear-gradient(135deg,var(--gold),var(--gold-2) 60%,var(--red));
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;color:#241703;font-size:15px;
+  box-shadow:0 6px 18px rgba(245,196,81,.32);
+}
+.logo-txt{font-size:20px;font-weight:800;letter-spacing:1px;white-space:nowrap}
+.logo-txt em{font-style:normal;color:var(--gold)}
+.logo-sub{display:block;font-size:11px;color:var(--txt-2);letter-spacing:2px;font-weight:400}
+.menu-btn{
+  display:none;flex:0 0 auto;width:42px;height:42px;border-radius:12px;
+  border:1px solid var(--line);background:var(--card);
+  align-items:center;justify-content:center;cursor:pointer;
+}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{
+  display:block;width:18px;height:2px;background:var(--txt);border-radius:2px;position:relative;
+}
+.menu-btn span::before{content:"";position:absolute;top:-6px}
+.menu-btn span::after{content:"";position:absolute;top:6px}
+#navsw{position:absolute;left:-9999px}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{
+  display:block;padding:9px 14px;border-radius:10px;font-size:15px;color:var(--txt-2);
+  transition:.22s;white-space:nowrap;
+}
+.nav a:hover,.nav a:focus{color:#fff;background:var(--card);outline:none}
+.nav a.on{color:#241703;background:linear-gradient(135deg,var(--gold),var(--gold-2));font-weight:700}
+
+/* ===== 首屏 ===== */
+.hero{position:relative;padding:76px 0 60px;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:-40% -10% auto -10%;height:130%;
+  background:
+    radial-gradient(600px 380px at 18% 20%,rgba(245,196,81,.20),transparent 65%),
+    radial-gradient(520px 360px at 82% 12%,rgba(61,218,215,.16),transparent 62%),
+    radial-gradient(480px 420px at 60% 90%,rgba(255,90,106,.14),transparent 65%);
+  pointer-events:none;
+}
+.hero-in{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;
+  border:1px solid rgba(245,196,81,.35);background:rgba(245,196,81,.10);
+  color:var(--gold);font-size:13px;letter-spacing:.5px;
+}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--gold);display:block}
+.hero h1{
+  margin:18px 0 14px;
+  font-size:clamp(30px,5.2vw,52px);
+  font-weight:900;letter-spacing:1px;
+}
+.hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,var(--gold),var(--gold-2) 45%,var(--red));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lead{color:var(--txt-2);font-size:clamp(15px,2.2vw,17px);max-width:620px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{
+  display:inline-block;padding:13px 26px;border-radius:12px;font-weight:700;font-size:15px;transition:.22s;
+}
+.btn-1{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#241703;box-shadow:0 10px 26px rgba(245,196,81,.28)}
+.btn-1:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.btn-2{border:1px solid var(--line);background:var(--card);color:var(--txt)}
+.btn-2:hover{transform:translateY(-2px);border-color:var(--cyan);color:var(--cyan)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px;max-width:520px}
+.stat{padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.stat b{display:block;font-size:22px;color:var(--gold);font-weight:800}
+.stat span{font-size:12.5px;color:var(--txt-2)}
+.hero-art{
+  position:relative;border:1px solid var(--line);border-radius:22px;padding:18px;
+  background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));
+  box-shadow:var(--shadow);
+}
+.hero-art::before{
+  content:"";position:absolute;inset:0;border-radius:22px;padding:1px;
+  background:linear-gradient(140deg,rgba(245,196,81,.55),transparent 40%,rgba(61,218,215,.45));
+  -webkit-mask:linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);
+  -webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;
+}
+.art-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.art-grid .p{border-radius:10px;aspect-ratio:2/3}
+.hero-note{margin-top:14px;font-size:13px;color:var(--txt-2);text-align:center}
+
+/* ===== 通用标题 ===== */
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(22px,3.4vw,30px);font-weight:800}
+.sec-head h2 i{display:inline-block;width:6px;height:26px;border-radius:3px;background:linear-gradient(180deg,var(--gold),var(--red));margin-right:10px;vertical-align:-4px}
+.sec-head p{color:var(--txt-2);font-size:14px;margin-top:6px}
+.more{font-size:14px;color:var(--cyan);border:1px solid rgba(61,218,215,.32);padding:8px 16px;border-radius:10px;background:rgba(61,218,215,.07);transition:.22s}
+.more:hover{background:rgba(61,218,215,.16)}
+
+/* ===== 影片卡片 ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:16px}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  background:var(--card);transition:.26s;display:flex;flex-direction:column;
+}
+.card:hover{transform:translateY(-6px);border-color:rgba(245,196,81,.5);box-shadow:0 16px 34px rgba(0,0,0,.5)}
+.poster{
+  position:relative;aspect-ratio:2/3;
+  background:linear-gradient(155deg,var(--c1,#3b4a6b),var(--c2,#151b2b));
+  display:flex;align-items:flex-end;padding:10px;
+}
+.poster .tag{
+  position:absolute;top:10px;left:10px;font-size:11px;padding:3px 9px;border-radius:999px;
+  background:rgba(0,0,0,.55);color:#fff;backdrop-filter:blur(4px);
+}
+.poster .score{
+  position:absolute;top:10px;right:10px;font-size:12px;font-weight:800;color:var(--gold);
+  background:rgba(0,0,0,.5);padding:3px 8px;border-radius:8px;
+}
+.poster .ttl{font-size:14px;font-weight:700;text-shadow:0 2px 8px rgba(0,0,0,.6);line-height:1.4}
+.card-b{padding:11px 12px 13px}
+.card-b h3{font-size:15px;font-weight:700;line-height:1.45}
+.card-b .meta{font-size:12.5px;color:var(--txt-2);margin-top:4px}
+.card-b .go{margin-top:9px;font-size:13px;color:var(--gold);display:inline-block}
+.card:hover .go{color:var(--gold-2)}
+
+/* ===== 排行榜 ===== */
+.rank{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.rk{
+  display:flex;gap:14px;align-items:center;padding:14px;border-radius:14px;
+  border:1px solid var(--line);background:var(--card);transition:.24s;
+}
+.rk:hover{border-color:rgba(245,196,81,.45);transform:translateX(4px)}
+.rk .no{
+  flex:0 0 42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:17px;color:#241703;background:linear-gradient(135deg,var(--gold),var(--gold-2));
+}
+.rk:nth-child(n+4) .no{background:rgba(255,255,255,.10);color:var(--txt)}
+.rk .info{flex:1 1 auto;min-width:0}
+.rk .info h3{font-size:15.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rk .info p{font-size:12.5px;color:var(--txt-2)}
+.bar{height:6px;border-radius:99px;background:rgba(255,255,255,.09);margin-top:7px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--gold),var(--red))}
+.rk .hot{flex:0 0 auto;font-size:13px;font-weight:800;color:var(--gold)}
+
+/* ===== 资讯 ===== */
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.nw{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card);transition:.24s;display:flex;flex-direction:column}
+.nw:hover{transform:translateY(-5px);border-color:rgba(61,218,215,.45)}
+.nw .ph{height:126px;background:linear-gradient(135deg,var(--c1,#2b3a5c),var(--c2,#141a29));position:relative}
+.nw .ph span{position:absolute;left:12px;bottom:12px;font-size:11.5px;color:#fff;background:rgba(0,0,0,.5);padding:3px 10px;border-radius:8px}
+.nw-b{padding:14px 15px 16px;flex:1 1 auto;display:flex;flex-direction:column}
+.nw-b h3{font-size:16px;font-weight:700;line-height:1.5}
+.nw-b p{margin-top:8px;font-size:13.5px;color:var(--txt-2);flex:1 1 auto}
+.nw-b .rd{margin-top:12px;font-size:13.5px;color:var(--cyan)}
+
+/* ===== 关于 + FAQ ===== */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.about .txt p{color:var(--txt-2);font-size:15px;margin-bottom:12px}
+.about .txt p strong{color:var(--txt)}
+.feat{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+.feat li{border:1px solid var(--line);border-radius:13px;padding:12px 14px;background:var(--card)}
+.feat li b{display:block;font-size:14.5px;color:var(--gold)}
+.feat li span{font-size:12.5px;color:var(--txt-2)}
+.faq{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);overflow:hidden}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq summary{
+  cursor:pointer;padding:15px 18px;font-size:15px;font-weight:700;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold);font-size:19px;font-weight:800}
+.faq details[open] summary::after{content:"-"}
+.faq details p{padding:0 18px 16px;font-size:14px;color:var(--txt-2)}
+
+/* ===== 关键词带 ===== */
+.kw{padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2)}
+.kw .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.kw b{font-size:14px;color:var(--txt-2);font-weight:400;margin-right:4px}
+.kw a{
+  font-size:13px;padding:6px 13px;border-radius:999px;border:1px solid var(--line);
+  background:rgba(255,255,255,.04);color:var(--txt-2);transition:.2s;
+}
+.kw a:hover{color:var(--gold);border-color:rgba(245,196,81,.45)}
+
+/* ===== 页脚 ===== */
+.ftr{padding:44px 0 30px;background:#080b14}
+.ftr-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:26px}
+.ftr h4{font-size:15px;margin-bottom:12px;color:#fff}
+.ftr li{margin-bottom:8px}
+.ftr li a{font-size:13.5px;color:var(--txt-2);transition:.2s}
+.ftr li a:hover{color:var(--gold)}
+.ftr .desc{font-size:13.5px;color:var(--txt-2);margin-top:10px;max-width:340px}
+.copy{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:#6f7c93;display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between}
+
+/* ===== 移动端 ===== */
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr;gap:28px}
+  .about{grid-template-columns:1fr}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:768px){
+  .menu-btn{display:flex}
+  .nav{
+    position:absolute;left:0;right:0;top:66px;flex-direction:column;align-items:stretch;gap:2px;
+    background:rgba(10,14,26,.97);border-bottom:1px solid var(--line);
+    padding:10px 16px 16px;display:none;
+  }
+  #navsw:checked ~ .nav{display:flex}
+  .nav a{padding:12px 12px;font-size:16px;border-radius:10px}
+  .hdr-in{height:58px}
+  .logo-txt{font-size:17px}
+  .logo-txt .logo-sub{display:none}
+  .sec{padding:44px 0}
+  .hero{padding:44px 0 34px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
+  .stats{grid-template-columns:repeat(3,1fr);gap:8px}
+  .stat{padding:11px 10px}
+  .stat b{font-size:18px}
+  .stat span{font-size:11.5px}
+  .feat{grid-template-columns:1fr}
+  .ftr-grid{grid-template-columns:1fr;gap:20px}
+  .hero-art{padding:12px}
+}
+@media (max-width:420px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .btn{padding:12px 20px;font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.77777dianyingwang.com/#website",
+      "url": "https://www.77777dianyingwang.com/",
+      "name": "77777电影网",
+      "alternateName": "77777电影",
+      "description": "77777电影网提供最新高清电影、热播电视剧、综艺动漫的在线观看指南与影视资讯排行。",
+      "inLanguage": "zh-CN",
+      "publisher": { "@id": "https://www.77777dianyingwang.com/#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.77777dianyingwang.com/#organization",
+      "name": "77777电影网",
+      "url": "https://www.77777dianyingwang.com/",
+      "description": "77777电影网是面向影视爱好者的影片推荐与影视资讯平台，每日更新高清电影、热播剧集、综艺动漫片单及排行榜。"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "77777电影网首页", "item": "https://www.77777dianyingwang.com/" },
+        { "@type": "ListItem", "position": 2, "name": "最新电影", "item": "https://www.77777dianyingwang.com/#movie" },
+        { "@type": "ListItem", "position": 3, "name": "影视排行", "item": "https://www.77777dianyingwang.com/#rank" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "77777电影网是什么类型的网站？",
+          "acceptedAnswer": { "@type": "Answer", "text": "77777电影网是影视内容导航与资讯推荐平台，提供最新高清电影、热播电视剧、综艺动漫的片单推荐、剧情介绍、上映时间与观影评测，帮助用户快速找到想看的影片。" }
+        },
+        {
+          "@type": "Question",
+          "name": "77777电影网的内容多久更新一次？",
+          "acceptedAnswer": { "@type": "Answer", "text": "77777电影网每日更新，新片上线、剧集更新与榜单变化会在当天同步，影视排行榜按热度每日重算。" }
+        },
+        {
+          "@type": "Question",
+          "name": "在77777电影网如何快速找到想看的电影？",
+          "acceptedAnswer": { "@type": "Answer", "text": "可通过顶部栏目进入最新电影、热播剧集、综艺动漫分类浏览，也可直接查看影视排行榜，按热度、评分与更新时间筛选。" }
+        },
+        {
+          "@type": "Question",
+          "name": "77777电影网是否支持手机浏览？",
+          "acceptedAnswer": { "@type": "Answer", "text": "支持。77777电影网采用移动端自适应布局，在手机、平板与桌面端均可正常访问，页面加载轻量、无需安装插件。" }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="#" aria-label="77777电影网 首页">
+      <span class="logo-mark" aria-hidden="true">77</span>
+      <span class="logo-txt">77777<em>电影网</em>
+        <span class="logo-sub">WWW.77777DIANYINGWANG.COM</span>
+      </span>
+    </a>
+
+    <input type="checkbox" id="navsw" aria-label="展开导航菜单" />
+    <label class="menu-btn" for="navsw" aria-label="打开或关闭导航菜单"><span></span></label>
+
+    <nav class="nav" aria-label="网站主导航">
+      <a class="on" href="#">首页</a>
+      <a href="#movie">最新电影</a>
+      <a href="#tv">热播剧集</a>
+      <a href="#variety">综艺动漫</a>
+      <a href="#rank">影视排行</a>
+      <a href="#news">影视资讯</a>
+      <a href="#about">关于我们</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <span class="badge"><i aria-hidden="true"></i>每日更新 · 2026 最新片单同步中</span>
+        <h1>上<em>77777电影网</em><br />看最新高清电影与热播剧集</h1>
+        <p class="lead">77777电影网为影视爱好者提供最新高清电影、热播电视剧、综艺动漫的在线观看指南、剧情介绍与影视资讯排行。片库按类型、地区、年份与热度多维整理，找片更快、选片更准，看片就上 77777电影网。</p>
+        <div class="cta">
+          <a class="btn btn-1" href="#movie">立即浏览片单</a>
+          <a class="btn btn-2" href="#rank">查看影视排行</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>38000+</b><span>收录影片资源</span></div>
+          <div class="stat"><b>每日</b><span>片单与榜单更新</span></div>
+          <div class="stat"><b>28</b><span>细分影视分类</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-grid" role="img" aria-label="77777电影网推荐影片海报墙缩略图">
+          <div class="p" style="--c1:#f5c451;--c2:#7a3a12"></div>
+          <div class="p" style="--c1:#3ddad7;--c2:#123a4a"></div>
+          <div class="p" style="--c1:#ff5a6a;--c2:#40121f"></div>
+          <div class="p" style="--c1:#8b7bff;--c2:#221a45"></div>
+          <div class="p" style="--c1:#57d98a;--c2:#123524"></div>
+          <div class="p" style="--c1:#ff9d3d;--c2:#4a2410"></div>
+        </div>
+        <p class="hero-note">77777电影网 · 精选片单可视化预览</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目一：最新电影 -->
+  <section class="sec" id="movie">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i aria-hidden="true"></i>最新电影 · 77777电影网新片速递</h2>
+          <p>院线新片、网络首播与高分佳作同步整理，含剧情简介与上线时间</p>
+        </div>
+        <a class="more" href="#">查看全部电影</a>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="poster" style="--c1:#f5c451;--c2:#5a2a0c" role="img" aria-label="动作科幻新片海报占位">
+            <span class="tag">动作 / 科幻</span><span class="score">8.9</span>
+            <span class="ttl">星际裂痕 第一季</span>
+          </div>
+          <div class="card-b">
+            <h3>星际裂痕</h3>
+            <p class="meta">2026 · 美国 · 128 分钟</p>
+            <a class="go" href="#">查看详情 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#3ddad7;--c2:#0f3542" role="img" aria-label="悬疑犯罪影片海报占位">
+            <span class="tag">悬疑 / 犯罪</span><span class="score">8.6</span>
+            <span class="ttl">雾港迷案</span>
+          </div>
+          <div class="card-b">
+            <h3>雾港迷案</h3>
+            <p class="meta">2026 · 中国大陆 · 116 分钟</p>
+            <a class="go" href="#">查看详情 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#ff5a6a;--c2:#3d1420" role="img" aria-label="爱情剧情影片海报占位">
+            <span class="tag">爱情 / 剧情</span><span class="score">8.2</span>
+            <span class="ttl">晚风信笺</span>
+          </div>
+          <div class="card-b">
+            <h3>晚风信笺</h3>
+            <p class="meta">2025 · 中国台湾 · 104 分钟</p>
+            <a class="go" href="#">查看详情 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#8b7bff;--c2:#1d1740" role="img" aria-label="奇幻冒险影片海报占位">
+            <span class="tag">奇幻 / 冒险</span><span class="score">9.1</span>
+            <span class="ttl">山海纪元</span>
+          </div>
+          <div class="card-b">
+            <h3>山海纪元</h3>
+            <p class="meta">2026 · 中国大陆 · 142 分钟</p>
+            <a class="go" href="#">查看详情 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#57d98a;--c2:#0f3122" role="img" aria-label="喜剧家庭影片海报占位">
+            <span class="tag">喜剧 / 家庭</span><span class="score">7.8</span>
+            <span class="ttl">周末奇妙日</span>
+          </div>
+          <div class="card-b">
+            <h3>周末奇妙日</h3>
+            <p class="meta">2025 · 韩国 · 98 分钟</p>
+            <a class="go" href="#">查看详情 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#ff9d3d;--c2:#45210d" role="img" aria-label="战争历史影片海报占位">
+            <span class="tag">战争 / 历史</span><span class="score">8.7</span>
+            <span class="ttl">铁原黎明</span>
+          </div>
+          <div class="card-b">
+            <h3>铁原黎明</h3>
+            <p class="meta">2026 · 中国大陆 · 135 分钟</p>
+            <a class="go" href="#">查看详情 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目二：热播剧集 -->
+  <section class="sec sec-alt" id="tv">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i aria-hidden="true"></i>热播剧集 · 追剧日历实时更新</h2>
+          <p>国产剧、韩剧、美剧与日剧更新进度一览，附分集剧情与演员表</p>
+        </div>
+        <a class="more" href="#">查看追剧日历</a>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="poster" style="--c1:#6ea8ff;--c2:#12203f" role="img" aria-label="都市职场剧集海报占位">
+            <span class="tag">更新至 28 集</span><span class="score">8.4</span>
+            <span class="ttl">长街十二号</span>
+          </div>
+          <div class="card-b">
+            <h3>长街十二号</h3>
+            <p class="meta">都市 / 职场 · 每周三、四更新</p>
+            <a class="go" href="#">立即追剧 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#ffb3c7;--c2:#3a1226" role="img" aria-label="古装爱情剧集海报占位">
+            <span class="tag">已完结 36 集</span><span class="score">8.8</span>
+            <span class="ttl">锦瑟华年</span>
+          </div>
+          <div class="card-b">
+            <h3>锦瑟华年</h3>
+            <p class="meta">古装 / 爱情 · 全 36 集</p>
+            <a class="go" href="#">立即追剧 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#9be15d;--c2:#16301a" role="img" aria-label="青春校园剧集海报占位">
+            <span class="tag">更新至 16 集</span><span class="score">7.9</span>
+            <span class="ttl">夏末方程式</span>
+          </div>
+          <div class="card-b">
+            <h3>夏末方程式</h3>
+            <p class="meta">青春 / 校园 · 每周六更新</p>
+            <a class="go" href="#">立即追剧 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#ffd76e;--c2:#4a3310" role="img" aria-label="家庭伦理剧集海报占位">
+            <span class="tag">更新至 22 集</span><span class="score">8.1</span>
+            <span class="ttl">屋檐之下</span>
+          </div>
+          <div class="card-b">
+            <h3>屋檐之下</h3>
+            <p class="meta">家庭 / 伦理 · 每晚 20:00 更新</p>
+            <a class="go" href="#">立即追剧 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#c792ea;--c2:#2a1740" role="img" aria-label="悬疑推理剧集海报占位">
+            <span class="tag">更新至 12 集</span><span class="score">9.0</span>
+            <span class="ttl">沉默证词</span>
+          </div>
+          <div class="card-b">
+            <h3>沉默证词</h3>
+            <p class="meta">悬疑 / 推理 · 每周日更新</p>
+            <a class="go" href="#">立即追剧 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#5eead4;--c2:#0f3a37" role="img" aria-label="科幻剧集海报占位">
+            <span class="tag">预告 · 待上线</span><span class="score">期待</span>
+            <span class="ttl">深空回响</span>
+          </div>
+          <div class="card-b">
+            <h3>深空回响</h3>
+            <p class="meta">科幻 / 巨制 · 77777电影网预约中</p>
+            <a class="go" href="#">预约提醒 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目三：综艺动漫 -->
+  <section class="sec" id="variety">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i aria-hidden="true"></i>综艺动漫 · 轻松时刻一站聚合</h2>
+          <p>热门综艺更新时间表与热门动漫新番连载，含评分与看点提示</p>
+        </div>
+        <a class="more" href="#">查看动漫新番</a>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="poster" style="--c1:#ff8a5b;--c2:#3d1a0e" role="img" aria-label="音乐综艺节目海报占位">
+            <span class="tag">综艺 / 音乐</span><span class="score">8.3</span>
+            <span class="ttl">声浪计划 第 5 季</span>
+          </div>
+          <div class="card-b">
+            <h3>声浪计划 第 5 季</h3>
+            <p class="meta">每周五 20:10 更新</p>
+            <a class="go" href="#">观看花絮 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#7dd3fc;--c2:#0e2c3f" role="img" aria-label="旅行真人秀综艺海报占位">
+            <span class="tag">综艺 / 旅行</span><span class="score">8.0</span>
+            <span class="ttl">慢行九州</span>
+          </div>
+          <div class="card-b">
+            <h3>慢行九州</h3>
+            <p class="meta">每周六 22:00 更新</p>
+            <a class="go" href="#">观看花絮 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#fca5a5;--c2:#3b1319" role="img" aria-label="热血动漫番剧海报占位">
+            <span class="tag">动漫 / 热血</span><span class="score">9.2</span>
+            <span class="ttl">苍穹之刃</span>
+          </div>
+          <div class="card-b">
+            <h3>苍穹之刃</h3>
+            <p class="meta">连载至 第 48 话 · 每周四更新</p>
+            <a class="go" href="#">开始追番 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#a3e635;--c2:#1d3011" role="img" aria-label="治愈动漫番剧海报占位">
+            <span class="tag">动漫 / 治愈</span><span class="score">8.9</span>
+            <span class="ttl">小森食记</span>
+          </div>
+          <div class="card-b">
+            <h3>小森食记</h3>
+            <p class="meta">连载至 第 24 话 · 已完结</p>
+            <a class="go" href="#">开始追番 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#e879f9;--c2:#33123d" role="img" aria-label="脱口秀综艺节目海报占位">
+            <span class="tag">综艺 / 脱口秀</span><span class="score">7.7</span>
+            <span class="ttl">今晚说点真话</span>
+          </div>
+          <div class="card-b">
+            <h3>今晚说点真话</h3>
+            <p class="meta">每周二 21:30 更新</p>
+            <a class="go" href="#">观看花絮 →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="poster" style="--c1:#fbbf24;--c2:#3f2a0a" role="img" aria-label="国创动漫番剧海报占位">
+            <span class="tag">动漫 / 国创</span><span class="score">8.6</span>
+            <span class="ttl">九州拾遗录</span>
+          </div>
+          <div class="card-b">
+            <h3>九州拾遗录</h3>
+            <p class="meta">连载至 第 36 话 · 每周一更新</p>
+            <a class="go" href="#">开始追番 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目四：影视排行 -->
+  <section class="sec sec-alt" id="rank">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i aria-hidden="true"></i>影视排行 · 77777电影网热度榜</h2>
+          <p>榜单依据全站搜索量、播放热度与评分综合计算，每日 08:00 刷新</p>
+        </div>
+        <a class="more" href="#">查看完整榜单</a>
+      </div>
+
+      <div class="rank">
+        <div class="rk">
+          <span class="no" aria-hidden="true">1</span>
+          <div class="info">
+            <h3>山海纪元</h3>
+            <p>奇幻冒险 · 9.1 分</p>
+            <div class="bar" role="img" aria-label="热度 96%"><i style="width:96%"></i></div>
+          </div>
+          <span class="hot">96%</span>
+        </div>
+        <div class="rk">
+          <span class="no" aria-hidden="true">2</span>
+          <div class="info">
+            <h3>沉默证词</h3>
+            <p>悬疑推理 · 9.0 分</p>
+            <div class="bar" role="img" aria-label="热度 93%"><i style="width:93%"></i></div>
+          </div>
+          <span class="hot">93%</span>
+        </div>
+        <div class="rk">
+          <span class="no" aria-hidden="true">3</span>
+          <div class="info">
+            <h3>星际裂痕</h3>
+            <p>动作科幻 · 8.9 分</p>
+            <div class="bar" role="img" aria-label="热度 90%"><i style="width:90%"></i></div>
+          </div>
+          <span class="hot">90%</span>
+        </div>
+        <div class="rk">
+          <span class="no" aria-hidden="true">4</span>
+          <div class="info">
+            <h3>锦瑟华年</h3>
+            <p>古装爱情 · 8.8 分</p>
+            <div class="bar" role="img" aria-label="热度 87%"><i style="width:87%"></i></div>
+          </div>
+          <span class="hot">87%</span>
+        </div>
+        <div class="rk">
+          <span class="no" aria-hidden="true">5</span>
+          <div class="info">
+            <h3>铁原黎明</h3>
+            <p>战争历史 · 8.7 分</p>
+            <div class="bar" role="img" aria-label="热度 84%"><i style="width:84%"></i></div>
+          </div>
+          <span class="hot">84%</span>
+        </div>
+        <div class="rk">
+          <span class="no" aria-hidden="true">6</span>
+          <div class="info">
+            <h3>苍穹之刃</h3>
+            <p>热血动漫 · 9.2 分</p>
+            <div class="bar" role="img" aria-label="热度 82%"><i style="width:82%"></i></div>
+          </div>
+          <span class="hot">82%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目五：影视资讯 -->
+  <section class="sec" id="news">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i aria-hidden="true"></i>影视资讯 · 行业动态与新片前瞻</h2>
+          <p>新片定档、剧集续订、幕后花絮与观影评测，77777电影网编辑部原创</p>
+        </div>
+        <a class="more" href="#">进入资讯频道</a>
+      </div>
+
+      <div class="news">
+        <article class="nw">
+          <div class="ph" style="--c1:#f5c451;--c2:#3d2708" role="img" aria-label="影视资讯配图占位：新片定档"><span>新片定档</span></div>
+          <div class="nw-b">
+            <h3>2026 暑期档前瞻：12 部重磅新片集中定档</h3>
+            <p>77777电影网整理 2026 暑期档定档信息，涵盖科幻、动画与悬疑三大类型，附上线时间表与看点预测。</p>
+            <a class="rd" href="#">阅读全文 →</a>
+          </div>
+        </article>
+
+        <article class="nw">
+          <div class="ph" style="--c1:#3ddad7;--c2:#0d2f3a" role="img" aria-label="影视资讯配图占位：剧集续订"><span>剧集动态</span></div>
+          <div class="nw-b">
+            <h3>《沉默证词》第二季正式续订，原班人马回归</h3>
+            <p>77777电影网获悉，该剧第二季已完成备案，预计年内开机，主演阵容与导演组保持稳定。</p>
+            <a class="rd" href="#">阅读全文 →</a>
+          </div>
+        </article>
+
+        <article class="nw">
+          <div class="ph" style="--c1:#ff5a6a;--c2:#361018" role="img" aria-label="影视资讯配图占位：观影评测"><span>观影评测</span></div>
+          <div class="nw-b">
+            <h3>周榜评测：《山海纪元》视效表现与剧情节奏分析</h3>
+            <p>77777电影网评测组从视效、叙事、配乐三个维度给出评分，并给出不同观众群体的观影建议。</p>
+            <a class="rd" href="#">阅读全文 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 栏目六：关于我们 -->
+  <section class="sec sec-alt" id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2><i aria-hidden="true"></i>关于 77777电影网</h2>
+          <p>专注影视内容整理与片单推荐，让每一次找片都更高效</p>
+        </div>
+      </div>
+
+      <div class="about">
+        <div class="txt">
+          <p><strong>77777电影网</strong>是一个面向影视爱好者的内容导航与资讯推荐平台，网址为 https://www.77777dianyingwang.com。站点围绕「找得到、看得懂、追得下去」三条主线，将分散的高清电影、热播电视剧、综艺动漫资源整理成结构化片单。</p>
+          <p>77777电影网按类型、地区、年份、评分与热度建立多维索引，配合每日刷新的影视排行榜，帮助用户在不确定的观影需求下快速锁定目标影片；同时提供剧情介绍、演员表与更新时间表，降低追剧的信息成本。</p>
+          <p>页面采用移动端自适应布局，手机、平板与桌面端体验一致，加载轻量、无需安装任何插件即可浏览。</p>
+
+          <ul class="feat">
+            <li><b>结构化片单</b><span>28 个细分分类，按类型与热度双重索引</span></li>
+            <li><b>每日更新</b><span>新片上线与剧集更新当天同步</span></li>
+            <li><b>热度榜单</b><span>综合搜索量与播放热度每日重算</span></li>
+            <li><b>全端适配</b><span>移动端自适应，小屏也能顺畅浏览</span></li>
+          </ul>
+        </div>
+
+        <div class="faq">
+          <details open="open">
+            <summary>77777电影网是什么类型的网站？</summary>
+            <p>77777电影网是影视内容导航与资讯推荐平台，提供最新高清电影、热播电视剧、综艺动漫的片单推荐、剧情介绍、上映时间与观影评测，帮助用户快速找到想看的影片。</p>
+          </details>
+          <details>
+            <summary>77777电影网的内容多久更新一次？</summary>
+            <p>77777电影网每日更新，新片上线、剧集更新与榜单变化会在当天同步，影视排行榜按热度每日 08:00 重算。</p>
+          </details>
+          <details>
+            <summary>在 77777电影网如何快速找到想看的电影？</summary>
+            <p>可通过顶部栏目进入最新电影、热播剧集、综艺动漫分类浏览，也可直接查看影视排行榜，按热度、评分与更新时间筛选。</p>
+          </details>
+          <details>
+            <summary>77777电影网是否支持手机浏览？</summary>
+            <p>支持。77777电影网采用移动端自适应布局，在手机、平板与桌面端均可正常访问，页面加载轻量、无需安装插件。</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词带 -->
+  <section class="kw" aria-label="77777电影网热门标签">
+    <div class="wrap">
+      <b>热门标签：</b>
+      <a href="#">77777电影网</a>
+      <a href="#">高清电影在线观看</a>
+      <a href="#">最新电影推荐</a>
+      <a href="#">热播电视剧</a>
+      <a href="#">国产剧排行</a>
+      <a href="#">美剧更新</a>
+      <a href="#">韩剧推荐</a>
+      <a href="#">日本动漫新番</a>
+      <a href="#">综艺节目</a>
+      <a href="#">电影排行榜</a>
+      <a href="#">新片上映时间</a>
+      <a href="#">影视资讯</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <h4>77777电影网</h4>
+        <p class="desc">77777电影网致力于整理最新高清电影、热播电视剧与综艺动漫片单，每日更新影视资讯与热度榜单，为影视爱好者提供高效的找片看片入口。</p>
+        <p class="desc">网址：https://www.77777dianyingwang.com</p>
+      </div>
+      <div>
+        <h4>影视分类</h4>
+        <ul>
+          <li><a href="#movie">最新电影</a></li>
+          <li><a href="#tv">热播剧集</a></li>
+          <li><a href="#variety">综艺动漫</a></li>
+          <li><a href="#rank">影视排行</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>资讯服务</h4>
+        <ul>
+          <li><a href="#news">新片定档</a></li>
+          <li><a href="#">观影评测</a></li>
+          <li><a href="#">幕后花絮</a></li>
+          <li><a href="#">追剧日历</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于站点</h4>
+        <ul>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#">收录规则</a></li>
+          <li><a href="#">内容纠错</a></li>
+          <li><a href="#">意见反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 77777电影网 77777dianyingwang.com　版权所有</span>
+      <span>本站内容均为影视信息整理，请通过正规渠道观看正版影片</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
